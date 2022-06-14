@@ -14,6 +14,14 @@ class _MainPageState extends State<MainPage> {
       appBar: AppBar(
         title: const Text('My Farm'),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: const [
+        BottomNavigationBarItem(icon: Icon(Icons.home), tooltip: 'Home'),
+        BottomNavigationBarItem(icon: Icon(Icons.book), tooltip: 'Bookings'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.category), tooltip: 'Category'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.settings), tooltip: 'Settings'),
+      ]),
     );
   }
 }
